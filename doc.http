@@ -1,0 +1,58 @@
+@baseUrl = http://localhost:8000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5NjgzOTA5LCJleHAiOjE2MTk2ODM5MTl9.b_KFWDSX2Db_ACZI_6LiL5sbvnYLiAIReVSYpwX4hL4
+@refresh = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5Njg0NDMzLCJleHAiOjIxNjE5Njg0NDMzfQ.9TF_ZYO_LNR7UFJml827Anqxu5f7fTX8Opf3ZRy4RGA
+# POST  {{baseUrl}}/api/login
+# content-type: application/json
+
+# {
+#     "username": "user@sg-edts.com",
+#     "password": "edts2021"
+# }
+
+
+# POST  {{baseUrl}}/api/refresh-token
+# content-type: application/json
+
+# {
+#     "refreshToken" :"{{refresh}}"
+# }
+
+
+# POST {{baseUrl}}/api/movie HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer {{token}}
+
+# {
+#     "name": "Avengers: Infinity War",
+#     "time": ["14:15", "16:00", "21:30", "23:00"],
+#     "rating": 8.8
+# }
+
+# POST {{baseUrl}}/api/create-user HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer {{token}}
+
+# {
+#     "username": "user@sg-edts.com",
+#     "password": "edts2021"
+# }
+
+# POST  {{baseUrl}}/api/create-credential
+# content-type: application/json
+# Authorization: Bearer {{token}}
+# {
+#     "firstName": "Cowboy",
+#     "address": "Jl Hj juned",
+#     "lastName": "Mexico",
+#     "nik": "12341232asdsad",
+#     "phone": "085217775525",
+#     "email":  "user@sg-edts.com"
+# }
+
+# GET {{baseUrl}}/api/credential
+# content-type: application/json
+# Authorization: Bearer {{token}}
+
+# GET {{baseUrl}}/api/menus HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer {{token}}
