@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:8000
+@baseUrl = http://172.18.186.86:12000
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5NjgzOTA5LCJleHAiOjE2MTk2ODM5MTl9.b_KFWDSX2Db_ACZI_6LiL5sbvnYLiAIReVSYpwX4hL4
 @refresh = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5Njg0NDMzLCJleHAiOjIxNjE5Njg0NDMzfQ.9TF_ZYO_LNR7UFJml827Anqxu5f7fTX8Opf3ZRy4RGA
 POST  {{baseUrl}}/api/login
