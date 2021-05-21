@@ -81,25 +81,25 @@
 # }
 
 
-# GET http://localhost:10000/api/transportasi HTTP/1.1
-# content-type: application/json
-
-PUT http://localhost:10000/api/update-transportasi HTTP/1.1
+GET http://172.18.186.86:12000/api/transportasi/6092760826b7a54a74b27f11 HTTP/1.1
 content-type: application/json
 
-{
-    "id":"6092760826b7a54a74b27f11",
-    "kendaraan": "mobil",
-    "tipe": "jeep",
-    "merk": "Jeep Wrangler Rubicon",
-    "nomorPolisi": "B 7777 KVY",
-    "bahanBakar": "bensin",
-    "pemilik": "Joni Sinambela",
-    "alamat": "Jl Kampung Mede No 121 Jakarta Utara",
-    "nomorRangka": "123-12412-31234-1231",
-    "pajak": true,
-    "kilometer": 24567,
-    "hargaBeli": 500000000,
-    "hargaJual": 300000000,
-    "tahun": 2019
-}
+# PUT http://localhost:10000/api/update-transportasi HTTP/1.1
+# content-type: application/json
+
+# {
+#     "id":"6092760826b7a54a74b27f11",
+#     "kendaraan": "mobil",
+#     "tipe": "jeep",
+#     "merk": "Jeep Wrangler Rubicon",
+#     "nomorPolisi": "B 7777 KVY",
+#     "bahanBakar": "bensin",
+#     "pemilik": "Joni Sinambela",
+#     "alamat": "Jl Kampung Mede No 121 Jakarta Utara",
+#     "nomorRangka": "123-12412-31234-1231",
+#     "pajak": true,
+#     "kilometer": 24567,
+#     "hargaBeli": 500000000,
+#     "hargaJual": 300000000,
+#     "tahun": 2019
+# }
