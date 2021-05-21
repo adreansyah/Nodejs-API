@@ -8,7 +8,7 @@ const credentials = require('./routes/users-credential-router');
 const menus = require('./routes/menu-router');
 const transportasi = require('./routes/transportasi-router');
 const app = express();
-const apiPort = 12000;
+const apiPort = 10000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());

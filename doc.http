@@ -1,6 +1,6 @@
-@baseUrl = http://172.18.186.86:12000
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5NjgzOTA5LCJleHAiOjE2MTk2ODM5MTl9.b_KFWDSX2Db_ACZI_6LiL5sbvnYLiAIReVSYpwX4hL4
-@refresh = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5Njg0NDMzLCJleHAiOjIxNjE5Njg0NDMzfQ.9TF_ZYO_LNR7UFJml827Anqxu5f7fTX8Opf3ZRy4RGA
+# @baseUrl = http://172.18.186.86:19000
+# @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5NjgzOTA5LCJleHAiOjE2MTk2ODM5MTl9.b_KFWDSX2Db_ACZI_6LiL5sbvnYLiAIReVSYpwX4hL4
+# @refresh = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNlckBzZy1lZHRzLmNvbSIsInBhc3N3b3JkIjoiZWR0czIwMjEifSwiaWF0IjoxNjE5Njg0NDMzLCJleHAiOjIxNjE5Njg0NDMzfQ.9TF_ZYO_LNR7UFJml827Anqxu5f7fTX8Opf3ZRy4RGA
 # POST  {{baseUrl}}/api/login
 # content-type: application/json
 
@@ -66,16 +66,40 @@
 
 # {
 #     "kendaraan": "mobil",
-#     "tipe": "sedan",
+#     "tipe": "jeep",
 #     "merk": "Honda Civic Turbo",
 #     "nomorPolisi": "B 7777 KVY",
 #     "bahanBakar": "bensin",
 #     "pemilik": "Joni Sinambela",
 #     "alamat": "Jl Kampung Mede No 121 Jakarta Utara",
-#     "nomorRangka": "123-12412-31234-1231",
+#     "nomorRangka": "123-12412-31234-1231", //min/MAX 4
 #     "pajak": true,
 #     "kilometer": 24567,
 #     "hargaBeli": 500000000,
 #     "hargaJual": 300000000,
 #     "tahun": 2019
 # }
+
+
+# GET http://localhost:10000/api/transportasi HTTP/1.1
+# content-type: application/json
+
+PUT http://localhost:10000/api/update-transportasi HTTP/1.1
+content-type: application/json
+
+{
+    "id":"6092760826b7a54a74b27f11",
+    "kendaraan": "mobil",
+    "tipe": "jeep",
+    "merk": "Jeep Wrangler Rubicon",
+    "nomorPolisi": "B 7777 KVY",
+    "bahanBakar": "bensin",
+    "pemilik": "Joni Sinambela",
+    "alamat": "Jl Kampung Mede No 121 Jakarta Utara",
+    "nomorRangka": "123-12412-31234-1231",
+    "pajak": true,
+    "kilometer": 24567,
+    "hargaBeli": 500000000,
+    "hargaJual": 300000000,
+    "tahun": 2019
+}
